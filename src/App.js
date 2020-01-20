@@ -6,6 +6,7 @@ import EventPractice from "./practice/eventPractice";
 import EventPractice_func from "./practice/func_eventPractice";
 import Iteration from "./practice/iteration";
 import Count_hooks from "./practice/hooks";
+import Info from "./practice/hooks_info";
 import "./App.css";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <EventPractice_func></EventPractice_func>
       <Iteration></Iteration>
       <Count_hooks></Count_hooks>
+      <Info></Info>
     </div>
   );
 }
