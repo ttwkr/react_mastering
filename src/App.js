@@ -8,6 +8,7 @@ import Iteration from "./practice/iteration";
 import CountHooks from "./practice/hooks";
 import Info from "./practice/hooks_info";
 import CountReducer from "./practice/hooks_useReducer";
+import InfoReducer from "./practice/hooks_Reducer_info";
 import "./App.css";
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
       <hr />
       {visiable && <Info></Info>}
       <CountReducer></CountReducer>
+      <InfoReducer></InfoReducer>
     </div>
   );
 };
