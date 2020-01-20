@@ -7,6 +7,7 @@ import EventPracticeFunc from "./practice/func_eventPractice";
 import Iteration from "./practice/iteration";
 import CountHooks from "./practice/hooks";
 import Info from "./practice/hooks_info";
+import CountReducer from "./practice/hooks_useReducer";
 import "./App.css";
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
       <button onClick={onClick}>{visiable ? "숨기기" : "보이기"}</button>
       <hr />
       {visiable && <Info></Info>}
+      <CountReducer></CountReducer>
     </div>
   );
 };
