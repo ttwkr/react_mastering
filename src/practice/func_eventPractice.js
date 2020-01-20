@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const EventPractice_func = () => {
+const EventPracticeFunc = () => {
   const [form, setForm] = useState({
     username: "",
     message: ""
@@ -51,4 +51,4 @@ const EventPractice_func = () => {
   );
 };
 
-export default EventPractice_func;
+export default EventPracticeFunc;

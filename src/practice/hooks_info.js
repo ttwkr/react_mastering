@@ -15,11 +15,18 @@ const Info = () => {
   //   console.log("마운트 될때만 실행 됩니다.");
   // }, []); //마운트 될때만 실행시키고 싶으면 두번째 파라미터에 [](빈배열)을 넣으면 된다.
 
-  useEffect(() => {
-    console.log(name);
-    console.log(nickname);
-  }, [name, nickname]);
+  // useEffect(() => {
+  //   console.log(name);
+  //   console.log(nickname);
+  // }, [name, nickname]);
   // 특정 값이 변경될때마다 랜더링
+
+  useEffect(() => {
+    console.log("effect");
+    return () => {
+      console.log("cleanup");
+    };
+  }, []);
   return (
     <div>
       <h1>Hooks_Info</h1>

@@ -1,27 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import MyComponent from "./practice/props";
 import Count from "./practice/state";
 import Say from "./practice/useState";
 import EventPractice from "./practice/eventPractice";
-import EventPractice_func from "./practice/func_eventPractice";
+import EventPracticeFunc from "./practice/func_eventPractice";
 import Iteration from "./practice/iteration";
-import Count_hooks from "./practice/hooks";
+import CountHooks from "./practice/hooks";
 import Info from "./practice/hooks_info";
 import "./App.css";
 
-function App() {
+const App = () => {
+  const [visiable, setVisialbe] = useState(false);
+  const onClick = () => {
+    setVisialbe(!visiable);
+  };
   return (
     <div className="App">
       <MyComponent name="상진"></MyComponent>
       <Count></Count>
       <Say></Say>
       <EventPractice></EventPractice>
-      <EventPractice_func></EventPractice_func>
+      <EventPracticeFunc></EventPracticeFunc>
       <Iteration></Iteration>
-      <Count_hooks></Count_hooks>
-      <Info></Info>
+      <CountHooks></CountHooks>
+      <hr />
+      <button onClick={onClick}>{visiable ? "숨기기" : "보이기"}</button>
+      <hr />
+      {visiable && <Info></Info>}
     </div>
   );
-}
+};
 
 export default App;
