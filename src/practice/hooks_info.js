@@ -3,16 +3,16 @@ import React, { useState, useEffect } from "react";
 const Info = () => {
   const [name, setName] = useState("");
   const [nickname, setNickname] = useState("");
+  // useEffect(() => {
+  //   console.log("렌더링이 완료되었습니다.");
+  //   console.log({
+  //     name,
+  //     nickname
+  //   });
+  // });
   useEffect(() => {
-    console.log("렌더링이 완료되었습니다.");
-    console.log({
-      name,
-      nickname
-    });
-  });
-  //   useEffect(() => {
-  //     console.log("마운트 될때만 실행 됩니다.");
-  //   }, []);
+    console.log("마운트 될때만 실행 됩니다.");
+  }, []); //마운트 될때만 실행시키고 싶으면 두번째 파라미터에 [](빈배열)을 넣으면 된다.
 
   return (
     <div>
