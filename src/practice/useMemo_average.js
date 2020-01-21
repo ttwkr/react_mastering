@@ -27,6 +27,12 @@ const Average = () => {
     setNumber(parseInt(e.target.value));
   };
 
+  const onKeyPress = e => {
+    if (e.key === "Enter") {
+      onClick();
+    }
+  };
+
   const onClick = e => {
     setNumbers(
       numbers.concat({
@@ -50,7 +56,12 @@ const Average = () => {
   return (
     <div>
       <h1>평균값 구하기 useMemo</h1>
-      <input type="text" value={number} onChange={onChange}></input>
+      <input
+        type="text"
+        value={number}
+        onChange={onChange}
+        onKeyPress={onKeyPress}
+      ></input>
       <button onClick={onClick}>추가</button>
       <ul>
         {numbers.map((curr, i) => (
