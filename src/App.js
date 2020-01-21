@@ -9,6 +9,7 @@ import CountHooks from "./practice/hooks";
 import Info from "./practice/hooks_info";
 import CountReducer from "./practice/hooks_useReducer";
 import InfoReducer from "./practice/hooks_Reducer_info";
+import Average from "./practice/useMemo_average";
 import "./App.css";
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
       {visiable && <Info></Info>}
       <CountReducer></CountReducer>
       <InfoReducer></InfoReducer>
+      <Average></Average>
     </div>
   );
 };
